@@ -7,10 +7,10 @@ import org.springframework.ui.Model;
 import java.util.List;
 
 @Controller
-@RequestMapping(path = { "/cart "})
+@RequestMapping(path = { "/cart" })
 public class CartController {
 
-    @GetMapping(produces = { "text/html" })
+    @GetMapping (produces =  "text/html" )
     public String displayCart(Model model) {
         CartService cs = new CartService();
         List<Item> cartItems = cs.getShoppingItems();
