@@ -14,5 +14,13 @@ public class WorkshopController {
     public String test() {
         return "workshop";
     }
+
+    @RequestMapping(path = { "/processNumber" })
+    public String testResults(
+        @RequestParam(name="inputNumber", defaultvalue="1") Integer unit,
+        Model model) {
+
+        return "workshop";
+    }
     
 }
