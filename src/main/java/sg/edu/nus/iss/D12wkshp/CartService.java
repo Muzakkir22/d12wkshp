@@ -7,7 +7,7 @@ public class CartService {
 
     public List<Item> getShoppingItems() {
 
-        List<Item> lstItems = new Arraylist<>();
+        List<Item> lstItems = new ArrayList<>();
 
         Item itm = new Item();
         itm.setItemName("Prada Bag");
